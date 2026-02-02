@@ -1,0 +1,125 @@
+/* ===== TIME RANGE PICKER ===== */
+.time-range-picker {
+  background: var(--cyber-slate);
+  border: 1px solid var(--electric-slate);
+  border-radius: 6px;
+  padding: 16px;
+  box-shadow: var(--shadow-sm);
+}
+
+.range-buttons {
+  display: flex;
+  gap: 8px;
+  margin-bottom: 16px;
+  flex-wrap: wrap;
+}
+
+.range-btn {
+  padding: 8px 14px;
+  background: transparent;
+  border: 1px solid var(--electric-slate);
+  border-radius: 4px;
+  color: var(--text-dark-secondary);
+  font-size: 12px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.range-btn:hover {
+  border-color: var(--neon-cyan);
+  color: var(--neon-cyan);
+}
+
+.range-btn.active {
+  background: var(--neon-cyan);
+  color: var(--void-black);
+  border-color: var(--neon-cyan);
+}
+
+.custom-range {
+  display: flex;
+  gap: 12px;
+  align-items: center;
+  margin-bottom: 16px;
+  padding-bottom: 16px;
+  border-bottom: 1px solid var(--electric-slate);
+}
+
+.date-input {
+  flex: 1;
+  padding: 8px 12px;
+  border: 1px solid var(--electric-slate);
+  border-radius: 4px;
+  font-size: 12px;
+  color: var(--text-dark);
+  background: transparent;
+}
+
+.date-input:focus {
+  outline: none;
+  border-color: var(--neon-cyan);
+}
+
+.range-separator {
+  color: var(--text-dark-secondary);
+  font-size: 12px;
+}
+
+.apply-btn {
+  padding: 8px 16px;
+  background: var(--neon-cyan);
+  color: var(--void-black);
+  border: none;
+  border-radius: 4px;
+  font-size: 12px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.apply-btn:hover {
+  background: var(--header-light);
+}
+
+.timeline-preview {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.timeline-track {
+  position: relative;
+  height: 4px;
+  background: var(--border-light);
+  border-radius: 2px;
+}
+
+.timeline-fill {
+  position: absolute;
+  left: 0;
+  top: 0;
+  height: 100%;
+  width: 100%;
+  background: var(--accent-green);
+  border-radius: 2px;
+}
+
+.timeline-handle {
+  position: absolute;
+  right: 0;
+  top: 50%;
+  width: 12px;
+  height: 12px;
+  background: var(--accent-green);
+  border: 2px solid #ffffff;
+  border-radius: 50%;
+  transform: translateY(-50%);
+  cursor: grab;
+}
+
+.timeline-label {
+  font-size: 11px;
+  color: var(--text-muted);
+  text-align: center;
+}

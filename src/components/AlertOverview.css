@@ -1,0 +1,144 @@
+/* ===== ALERT OVERVIEW ===== */
+.alert-overview {
+  background: var(--cyber-slate);
+  border: 1px solid var(--electric-slate);
+  border-radius: 6px;
+  padding: 20px;
+  box-shadow: var(--shadow-sm);
+}
+
+.alert-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.alert-header h3 {
+  font-size: 16px;
+  font-weight: 700;
+  color: var(--text-dark);
+}
+
+.refresh-btn {
+  font-size: 16px;
+  cursor: pointer;
+  transition: transform 0.3s ease;
+}
+
+.refresh-btn:hover {
+  transform: rotate(180deg);
+}
+
+.severity-breakdown {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 12px;
+  margin-bottom: 20px;
+  padding-bottom: 20px;
+  border-bottom: 1px solid var(--electric-slate);
+}
+
+.severity-card {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 12px;
+  background: rgba(0, 245, 255, 0.05);
+  border: 1px solid var(--electric-slate);
+  border-radius: 6px;
+}
+
+.severity-dot {
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+}
+
+.severity-info {
+  flex: 1;
+}
+
+.severity-name {
+  font-size: 11px;
+  font-weight: 700;
+  color: var(--text-dark-secondary);
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+.severity-count {
+  font-size: 18px;
+  font-weight: 700;
+  color: var(--text-dark);
+  line-height: 1;
+  margin: 4px 0;
+}
+
+.severity-trend {
+  font-size: 11px;
+  font-weight: 600;
+}
+
+.recent-alerts {
+  display: flex;
+  flex-direction: column;
+}
+
+.alerts-header {
+  font-size: 12px;
+  font-weight: 700;
+  color: var(--neon-cyan);
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  margin-bottom: 12px;
+}
+
+.alert-item {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 12px;
+  background: rgba(0, 245, 255, 0.05);
+  border: 1px solid var(--electric-slate);
+  border-radius: 4px;
+  margin-bottom: 8px;
+  transition: all 0.2s ease;
+}
+
+.alert-item:last-child {
+  margin-bottom: 0;
+}
+
+.alert-item:hover {
+  border-color: var(--neon-cyan);
+  box-shadow: 0 0 10px rgba(0, 245, 255, 0.2);
+}
+
+.alert-marker {
+  width: 4px;
+  height: 40px;
+  border-radius: 2px;
+}
+
+.alert-details {
+  flex: 1;
+}
+
+.alert-title {
+  font-size: 12px;
+  font-weight: 600;
+  color: var(--text-dark);
+  margin-bottom: 4px;
+}
+
+.alert-meta {
+  font-size: 11px;
+  color: var(--text-dark-secondary);
+}
+
+.alert-severity {
+  font-size: 11px;
+  font-weight: 700;
+  text-transform: uppercase;
+}

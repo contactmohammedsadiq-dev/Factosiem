@@ -1,0 +1,129 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  /* === CYBERPUNK: Core Dark Palette === */
+  --void-black: #05060A;            /* Primary Background */
+  --neon-charcoal: #0B0F1A;         /* Secondary Background */
+  --cyber-slate: #121826;           /* Card / Panel */
+  --electric-slate: #1F2937;        /* Borders / Lines */
+  --neon-white: #E5E7EB;            /* Primary Text */
+  --steel-grey: #9CA3AF;            /* Muted Text */
+  
+  /* === CYBERPUNK: Neon Accent Colors === */
+  --neon-cyan: #00F5FF;             /* Primary Accent */
+  --electric-purple: #8B5CF6;       /* Secondary Accent */
+  --neon-pink: #FF2EDF;             /* Highlight / CTA */
+  --matrix-green: #00FF9C;          /* Success */
+  --neon-amber: #FFD60A;            /* Warning */
+  --neon-red: #FF3B3B;              /* Danger */
+  
+  /* === CYBERPUNK: Alert Severity === */
+  --severity-critical: #FF3B3B;     /* Neon Red */
+  --severity-high: #FF2EDF;         /* Hot Magenta */
+  --severity-medium: #FFD60A;       /* Neon Amber */
+  --severity-low: #00F5FF;          /* Neon Cyan */
+  --severity-info: #8B5CF6;         /* Electric Purple */
+  --severity-success: #00FF9C;      /* Matrix Green */
+  
+  /* === CYBERPUNK: Chart Colors === */
+  --chart-cyan: #00F5FF;
+  --chart-pink: #FF2EDF;
+  --chart-purple: #8B5CF6;
+  --chart-green: #00FF9C;
+  --chart-amber: #FFD60A;
+  --chart-red: #FF3B3B;
+  
+  /* === Legacy variable mappings === */
+  --bg-primary: #05060A;
+  --bg-secondary: #121826;
+  --bg-tertiary: #1F2937;
+  
+  --header-dark: #05060A;
+  --header-light: #00F5FF;
+  
+  --accent-primary: #00F5FF;
+  --accent-secondary: #8B5CF6;
+  --accent-green: #00FF9C;
+  --accent-gray: #9CA3AF;
+  
+  --text-primary: #E5E7EB;
+  --text-secondary: #9CA3AF;
+  --text-muted: #6B7280;
+  --text-light: #9CA3AF;
+  
+  --card-bg-dark: #121826;
+  --card-border-dark: #1F2937;
+  --icon-default: #9CA3AF;
+  --icon-active: #00F5FF;
+  
+  --primary-brand: #05060A;
+  --secondary-brand: #0B0F1A;
+  --bg-dark: #05060A;
+  --bg-light: #F5F7FA;
+  
+  --text-dark: #E5E7EB;
+  --text-dark-secondary: #9CA3AF;
+  --text-light-secondary: #495057;
+  
+  --border-color: #1F2937;
+  --border-light: #2D3748;
+  
+  /* === Premium Cyberpunk Shadows with Neon Glow === */
+  --shadow-sm: 0 2px 8px rgba(0, 245, 255, 0.1), inset 0 1px 0 rgba(0, 245, 255, 0.05);
+  --shadow-md: 0 8px 24px rgba(0, 245, 255, 0.15), inset 0 1px 0 rgba(0, 245, 255, 0.1);
+  --shadow-lg: 0 16px 48px rgba(0, 245, 255, 0.2), inset 0 1px 0 rgba(0, 245, 255, 0.1);
+  --shadow-xl: 0 24px 64px rgba(0, 245, 255, 0.25), inset 0 1px 0 rgba(0, 245, 255, 0.1);
+  
+  /* === CYBERPUNK Glow Effects === */
+  --glow-cyan: 0 0 20px rgba(0, 245, 255, 0.5), 0 0 40px rgba(0, 245, 255, 0.25);
+  --glow-purple: 0 0 20px rgba(139, 92, 246, 0.4), 0 0 40px rgba(139, 92, 246, 0.2);
+  --glow-pink: 0 0 20px rgba(255, 46, 223, 0.4), 0 0 40px rgba(255, 46, 223, 0.2);
+  --glow-green: 0 0 20px rgba(0, 255, 156, 0.4), 0 0 40px rgba(0, 255, 156, 0.2);
+  --glow-red: 0 0 20px rgba(255, 59, 59, 0.4), 0 0 40px rgba(255, 59, 59, 0.2);
+}
+
+html, body, #root {
+  width: 100%;
+  height: 100%;
+}
+
+body {
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+  background: linear-gradient(135deg, #05060A 0%, #0B0F1A 50%, #121826 100%);
+  color: var(--text-primary);
+  overflow: hidden;
+  perspective: 1000px;
+}
+
+/* Monospaced font for logs */
+.log-data, .event-value, code {
+  font-family: 'Monaco', 'Menlo', 'Ubuntu Mono', monospace;
+  font-size: 12px;
+}
+
+/* Scrollbars */
+::-webkit-scrollbar {
+  width: 10px;
+  height: 10px;
+}
+
+::-webkit-scrollbar-track {
+  background: rgba(0, 245, 255, 0.05);
+  border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+  background: linear-gradient(180deg, var(--neon-cyan), rgba(0, 245, 255, 0.4));
+  border-radius: 10px;
+  border: 2px solid var(--cyber-slate);
+  box-shadow: 0 0 12px rgba(0, 245, 255, 0.3);
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: linear-gradient(180deg, #0AEFFF, var(--neon-cyan));
+  box-shadow: 0 0 20px rgba(0, 245, 255, 0.5);
+}

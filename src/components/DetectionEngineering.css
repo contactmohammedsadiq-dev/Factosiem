@@ -1,0 +1,260 @@
+/* Rule Wizard Global */
+.rule-wizard-container {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    background: #0d0d0d;
+}
+
+.wizard-header {
+    padding: 16px 24px;
+    border-bottom: 1px solid #333;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #161616;
+}
+
+.wizard-title h3 {
+    margin: 0 0 8px 0;
+    font-size: 16px;
+    color: #fff;
+}
+
+.wizard-steps-indicator {
+    display: flex;
+    gap: 8px;
+}
+
+.step-badge {
+    font-size: 11px;
+    padding: 4px 8px;
+    border-radius: 12px;
+    background: #252525;
+    color: #666;
+    border: 1px solid transparent;
+}
+
+.step-badge.active {
+    background: rgba(0, 245, 255, 0.1);
+    color: #00F5FF;
+    border-color: #00F5FF;
+}
+
+.step-badge.completed {
+    color: #2EB67D;
+}
+
+.wizard-content {
+    flex: 1;
+    padding: 24px;
+    overflow-y: auto;
+}
+
+.wizard-footer {
+    padding: 16px 24px;
+    border-top: 1px solid #333;
+    display: flex;
+    justify-content: space-between;
+    background: #161616;
+}
+
+/* Metadata Form */
+.rule-metadata-form {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 8px;
+    font-size: 12px;
+    color: #aaa;
+    font-weight: 500;
+}
+
+.meta-input {
+    width: 100%;
+    background: #1e1e1e;
+    border: 1px solid #333;
+    border-radius: 6px;
+    padding: 10px;
+    color: #fff;
+    font-size: 13px;
+}
+
+.meta-input:focus {
+    outline: none;
+    border-color: var(--accent-primary);
+}
+
+.meta-select {
+    width: 100%;
+    background: #1e1e1e;
+    border: 1px solid #333;
+    border-radius: 6px;
+    padding: 10px;
+    color: #fff;
+    font-size: 13px;
+    /* Appearance reset handled by browser normally */
+}
+
+.form-row {
+    display: flex;
+    gap: 20px;
+}
+
+.form-group.half {
+    flex: 1;
+}
+
+.form-section-title {
+    font-size: 11px;
+    text-transform: uppercase;
+    color: #888;
+    border-bottom: 1px solid #333;
+    padding-bottom: 8px;
+    margin: 24px 0 16px 0;
+    letter-spacing: 0.5px;
+}
+
+/* Testing Panel */
+.rule-testing-panel {
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+.test-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+    padding: 12px;
+    background: #1e1e1e;
+    border-radius: 6px;
+    border: 1px solid #333;
+}
+
+.test-results-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 16px;
+    margin-bottom: 24px;
+}
+
+.result-card {
+    background: #1e1e1e;
+    border: 1px solid #333;
+    padding: 16px;
+    border-radius: 6px;
+    text-align: center;
+}
+
+.rc-label {
+    font-size: 11px;
+    color: #888;
+    text-transform: uppercase;
+    margin-bottom: 8px;
+}
+
+.rc-value {
+    font-size: 24px;
+    font-weight: 600;
+    color: #fff;
+    margin-bottom: 4px;
+}
+
+.rc-trend {
+    font-size: 11px;
+}
+
+.rc-trend.good {
+    color: #2EB67D;
+}
+
+.rc-trend.warning {
+    color: #ffc107;
+}
+
+.dry-run-preview h4 {
+    margin: 0 0 12px 0;
+    font-size: 14px;
+    color: #ddd;
+}
+
+.preview-table {
+    width: 100%;
+    border-collapse: collapse;
+    font-size: 12px;
+}
+
+.preview-table th {
+    text-align: left;
+    padding: 8px;
+    border-bottom: 1px solid #444;
+    color: #888;
+}
+
+.preview-table td {
+    padding: 8px;
+    border-bottom: 1px solid #222;
+    color: #ccc;
+}
+
+.match-tag {
+    background: rgba(220, 53, 69, 0.2);
+    color: #ff6b6b;
+    padding: 2px 6px;
+    border-radius: 4px;
+    font-size: 10px;
+    font-weight: 600;
+}
+
+.ai-tune-suggestions {
+    margin-top: 24px;
+    background: rgba(0, 245, 255, 0.05);
+    border: 1px solid rgba(0, 245, 255, 0.2);
+    border-radius: 6px;
+    padding: 16px;
+}
+
+.ai-tune-header {
+    font-weight: 600;
+    color: #00F5FF;
+    margin-bottom: 8px;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.ai-tune-content p {
+    font-size: 13px;
+    color: #ccc;
+    margin: 4px 0;
+}
+
+/* Governance */
+.governance-review {
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.review-item {
+    margin-bottom: 16px;
+}
+
+.review-item label {
+    font-size: 11px;
+    color: #888;
+    display: block;
+    margin-bottom: 4px;
+}
+
+.review-item .val {
+    font-size: 14px;
+    color: #fff;
+}

@@ -1,0 +1,216 @@
+/* Threat Intelligence Global */
+.threat-intel-container {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    background: #0d0d0d;
+    color: #fff;
+    overflow: hidden;
+}
+
+.ti-header {
+    padding: 16px 24px;
+    border-bottom: 1px solid #333;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: rgba(255, 255, 255, 0.02);
+}
+
+.ti-title h2 {
+    font-size: 18px;
+    margin: 0;
+    color: #e0e0e0;
+}
+
+.ti-subtitle {
+    font-size: 12px;
+    color: #888;
+    margin-top: 4px;
+}
+
+.ti-content {
+    flex: 1;
+    overflow-y: auto;
+    padding: 24px;
+    position: relative;
+}
+
+/* Dashboard Grid */
+.ti-dashboard-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+    gap: 24px;
+}
+
+.ti-card {
+    background: #1e1e1e;
+    border: 1px solid #333;
+    border-radius: 8px;
+    padding: 24px;
+    display: flex;
+    flex-direction: column;
+    transition: all 0.2s;
+    position: relative;
+    overflow: hidden;
+}
+
+.ti-card:hover {
+    transform: translateY(-2px);
+    border-color: #555;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.4);
+}
+
+.ti-card::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 4px;
+    height: 100%;
+    background: var(--accent-primary, #00F5FF);
+    opacity: 0;
+    transition: opacity 0.2s;
+}
+
+.ti-card:hover::before {
+    opacity: 1;
+}
+
+.ti-card-icon {
+    font-size: 24px;
+    margin-bottom: 16px;
+    background: rgba(255, 255, 255, 0.05);
+    width: 48px;
+    height: 48px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 8px;
+}
+
+.ti-card-title {
+    font-size: 16px;
+    font-weight: 600;
+    margin-bottom: 8px;
+    color: #fff;
+}
+
+.ti-card-desc {
+    font-size: 13px;
+    color: #aaa;
+    margin-bottom: 24px;
+    line-height: 1.5;
+    flex: 1;
+}
+
+/* Sub-Page Layout */
+.ti-page-container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.ti-page-header {
+    margin-bottom: 32px;
+}
+
+.ti-page-title {
+    font-size: 24px;
+    margin-bottom: 8px;
+}
+
+.ti-input-section {
+    background: #161616;
+    border: 1px solid #333;
+    border-radius: 8px;
+    padding: 24px;
+    margin-bottom: 32px;
+}
+
+.ti-section-label {
+    font-size: 11px;
+    text-transform: uppercase;
+    color: #888;
+    margin-bottom: 16px;
+    letter-spacing: 1px;
+}
+
+.ti-results-section {
+    animation: fadeIn 0.4s ease-out;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(10px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Specific Page Styles */
+.risk-score-circle {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    border: 8px solid #222;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 32px;
+    font-weight: 700;
+    margin: 0 auto 16px;
+    background: #111;
+    position: relative;
+}
+
+.risk-label {
+    text-align: center;
+    font-size: 12px;
+    color: #888;
+    text-transform: uppercase;
+}
+
+.market-trend-chart {
+    height: 200px;
+    background: rgba(255, 255, 255, 0.02);
+    border-radius: 6px;
+    display: flex;
+    align-items: flex-end;
+    padding: 16px;
+    gap: 8px;
+}
+
+.trend-bar {
+    flex: 1;
+    background: var(--accent-primary);
+    opacity: 0.6;
+    border-radius: 2px 2px 0 0;
+    transition: height 0.5s ease-out;
+}
+
+.dark-web-feed {
+    background: #000;
+    border: 1px solid #333;
+    border-radius: 4px;
+    padding: 16px;
+    font-family: 'Courier New', monospace;
+    font-size: 12px;
+    color: #00ff00;
+    height: 300px;
+    overflow-y: auto;
+}
+
+.feed-item {
+    margin-bottom: 8px;
+    border-bottom: 1px dashed #333;
+    padding-bottom: 8px;
+}
+
+.feed-ts {
+    color: #666;
+    margin-right: 8px;
+}
