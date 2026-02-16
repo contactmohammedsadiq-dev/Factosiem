@@ -5,7 +5,7 @@ export default function CustomFeedConfig({ onBack }) {
     const [feedUrl, setFeedUrl] = useState(null);
 
     const handleCreate = () => {
-        setFeedUrl('https://api.factosiem.io/feeds/v1/custom/8f72a-29b1?token=xp92');
+        setFeedUrl('https://api.orlev-siem.io/feeds/v1/custom/8f72a-29b1?token=xp92');
     };
 
     return (

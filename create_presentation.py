@@ -87,7 +87,7 @@ def add_content_slide(prs, title, content_points):
     return slide
 
 # Slide 1: Title
-add_title_slide(prs, "FACTOSIEM", "Data Ingestion, Visualization & Features Architecture")
+add_title_slide(prs, "ORLEV-SIEM", "Data Ingestion, Visualization & Features Architecture")
 
 # Slide 2: System Overview
 add_content_slide(prs, "System Overview", [
@@ -272,8 +272,8 @@ add_content_slide(prs, "Future Enhancements", [
 ])
 
 # Slide 16: Conclusion
-add_title_slide(prs, "Ready to Deploy", "Secure your enterprise with FACTOSIEM")
+add_title_slide(prs, "Ready to Deploy", "Secure your enterprise with ORLEV-SIEM")
 
 # Save presentation
-prs.save('FACTOSIEM_Architecture_Guide.pptx')
-print("✓ Presentation created: FACTOSIEM_Architecture_Guide.pptx")
+prs.save('ORLEV-SIEM_Architecture_Guide.pptx')
+print("✓ Presentation created: ORLEV-SIEM_Architecture_Guide.pptx")

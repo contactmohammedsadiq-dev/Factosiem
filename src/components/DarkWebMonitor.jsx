@@ -15,7 +15,7 @@ export default function DarkWebMonitor({ onBack }) {
                 <div className="ti-section-label">Monitoring Config</div>
                 <div className="form-group">
                     <label>Domain Watchlist</label>
-                    <input type="text" className="meta-input" placeholder="e.g. example.com" defaultValue="factosiem.com" />
+                    <input type="text" className="meta-input" placeholder="e.g. example.com" defaultValue="orlev-siem.com" />
                 </div>
                 <div className="form-group">
                     <label>Keywords (Executive Names, Projects)</label>
@@ -30,7 +30,7 @@ export default function DarkWebMonitor({ onBack }) {
                     <div className="dark-web-feed">
                         <div className="feed-item">
                             <span className="feed-ts">[2024-10-24 14:02:11]</span>
-                            <span style={{ color: '#dc3545' }}>CRITICAL:</span> Database dump matching 'factosiem' found on XSS forum. Seller: 'DarkOverlord'. Price: $500.
+                            <span style={{ color: '#dc3545' }}>CRITICAL:</span> Database dump matching 'orlev-siem' found on XSS forum. Seller: 'DarkOverlord'. Price: $500.
                         </div>
                         <div className="feed-item">
                             <span className="feed-ts">[2024-10-24 13:45:22]</span>

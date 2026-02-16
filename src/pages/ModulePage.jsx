@@ -1,7 +1,6 @@
 import { useParams, useNavigate } from 'react-router-dom';
 import { useState } from 'react';
 import { MODULES } from '../constants/modules';
-import FactosiemLogo from '../assets/factosiem-logo';
 import LeftPanel from '../components/LeftPanel';
 import MainPanel from '../components/MainPanel';
 import RightPanel from '../components/RightPanel';
@@ -32,8 +31,7 @@ export default function ModulePage() {
           ← Back
         </button>
         <div className="module-logo-header">
-          <FactosiemLogo size={32} />
-          <span className="module-logo-text">FACTOSIEM</span>
+          <span className="module-logo-text">ORLEV-SIEM</span>
         </div>
         <div className="module-title">
           {module.icon} {module.name}

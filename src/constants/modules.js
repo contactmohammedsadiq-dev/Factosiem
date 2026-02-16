@@ -196,26 +196,6 @@ export const MODULES = [
     ]
   },
   {
-    id: 'compliance',
-    name: 'Compliance & Auditing',
-    icon: '✅',
-    description: 'Audit trails, compliance reporting, and regulatory alignment',
-    badge: 'Governance',
-    features: [
-      'Audit Trail',
-      'Compliance Reports',
-      'Regulatory Framework',
-      'Approval Workflows',
-      'Evidence Collection'
-    ],
-    metrics: [
-      { label: 'Audits Logged', value: '47.3K', trend: '↑ 2.1K' },
-      { label: 'Compliance %', value: '99.2%', trend: '↑ 0.8%' },
-      { label: 'Open Findings', value: '3', trend: '↓ 2' },
-      { label: 'Reports Ready', value: '8', trend: '→ 0' }
-    ]
-  },
-  {
     id: 'ticketing',
     name: 'Ticketing & Case Orchestration',
     icon: '🎫',
@@ -235,6 +215,25 @@ export const MODULES = [
       { label: 'Avg MTTR', value: '18 min', trend: '↓ 3 min' },
       { label: 'SLA Compliance', value: '96.8%', trend: '↑ 1.2%' },
       { label: 'Auto Actions', value: '78%', trend: '↑ 4%' }
-    ]
-  }
+    ]  },
+  {
+    id: 'compliance',
+    name: 'Compliance & Auditing',
+    icon: '📜',
+    description: 'Next-gen compliance monitoring, automated evidence collection, and AI-driven audit readiness',
+    badge: 'Governance',
+    features: [
+      'Core Compliance Frameworks',
+      'Continuous Compliance Engine',
+      'Automated Evidence Collection',
+      'AI Compliance Analyst',
+      'Real-time Drift Detection',
+      'Audit Reports & Exports'
+    ],
+    metrics: [
+      { label: 'Overall Score', value: '85%', trend: '↑ 2%' },
+      { label: 'Control Failures', value: '12', trend: '↓ 4' },
+      { label: 'Evidence/Month', value: '14.2K', trend: '↑ 8%' },
+      { label: 'Audit Readiness', value: 'READY', trend: '✔' }
+    ]  }
 ];

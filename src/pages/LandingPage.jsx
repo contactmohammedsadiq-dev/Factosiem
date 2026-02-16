@@ -1,6 +1,6 @@
 import { useNavigate } from 'react-router-dom';
 import { MODULES } from '../constants/modules';
-import FactosiemLogo from '../assets/factosiem-logo';
+import fullLogo from '../assets/orlev-siem-full.png'; // Make sure this file exists!
 import './LandingPage.css';
 
 export default function LandingPage() {
@@ -13,9 +13,18 @@ export default function LandingPage() {
   return (
     <div className="landing-container">
       <div className="landing-header">
-        <div className="landing-logo-container">
-          <FactosiemLogo size={48} />
-          <div className="landing-logo-text">FACTOSIEM</div>
+        <div className="landing-logo-container" style={{ display: 'flex', justifyContent: 'center', width: '100%' }}>
+          <img 
+            src={fullLogo} 
+            alt="ORLEV-SIEM" 
+            className="landing-full-logo"
+            style={{ 
+              maxWidth: '400px', 
+              width: '100%', 
+              height: 'auto',
+              filter: 'drop-shadow(0 0 10px rgba(0, 245, 255, 0.3))' 
+            }} 
+          />
         </div>
         <div className="landing-subtitle">
           Enterprise Threat Intelligence • AI-Native Investigations • Real-Time Response

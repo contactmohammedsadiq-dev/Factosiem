@@ -11,6 +11,7 @@ import AutomatedResponse from './AutomatedResponse';
 import AnalyticsReporting from './AnalyticsReporting';
 import UEBAModule from './UEBAModule';
 import TicketingOrchestration from './TicketingOrchestration';
+import ComplianceAuditing from './ComplianceAuditing';
 import './MainPanel.css';
 
 export default function MainPanel({ module, selectedFeatureIdx, selectedLog, setSelectedLog, selectedAlert, setSelectedAlert, selectedIncident, setSelectedIncident }) {
@@ -72,6 +73,12 @@ export default function MainPanel({ module, selectedFeatureIdx, selectedLog, set
       );
     } else if (module.id === 'ticketing') {
       return <TicketingOrchestration />;
+    } else if (module.id === 'compliance') {
+      return (
+        <ComplianceAuditing 
+          selectedFeatureIdx={selectedFeatureIdx}
+        />
+      );
     } else {
       return (
         <div className="content-section">
