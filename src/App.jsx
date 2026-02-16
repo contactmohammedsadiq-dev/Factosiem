@@ -1,15 +1,10 @@
-import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
-import LandingPage from './pages/LandingPage';
-import ModulePage from './pages/ModulePage';
-import './App.css';
+import React from 'react';
+import { BrowserRouter as Router } from 'react-router-dom';
 
 function App() {
   return (
-    <Router basename="/Factosiem">
-      <Routes>
-        <Route path="/" element={<LandingPage />} />
-        <Route path="/module/:moduleId" element={<ModulePage />} />
-      </Routes>
+    <Router basename="/">
+      {/* Your routes go here */}
     </Router>
   );
 }
