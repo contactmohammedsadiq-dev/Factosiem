@@ -5,7 +5,7 @@ import './App.css';
 
 function App() {
   return (
-    <Router>
+    <Router basename="/Factosiem">
       <Routes>
         <Route path="/" element={<LandingPage />} />
         <Route path="/module/:moduleId" element={<ModulePage />} />
