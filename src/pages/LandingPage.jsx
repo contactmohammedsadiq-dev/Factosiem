@@ -19,7 +19,7 @@ export default function LandingPage() {
             alt="ORLEV-SIEM" 
             className="landing-full-logo"
             style={{ 
-              maxWidth: '400px', 
+              maxWidth: '200px', 
               width: '100%', 
               height: 'auto',
               filter: 'drop-shadow(0 0 10px rgba(0, 245, 255, 0.3))' 
